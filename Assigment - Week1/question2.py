@@ -21,3 +21,4 @@ print("Det blir " + str(money_after_purchase) + " kronor över.")
 
 half_of_money_after_purchase = money_after_purchase / 2
 print("Hälften är: " + str(half_of_money_after_purchase))
+
