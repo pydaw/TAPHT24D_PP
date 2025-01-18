@@ -30,7 +30,7 @@ sum = t1 + t2 + t3
 print("Summan av talen är: " + str(sum))
 
 
-# Stört tal
+# Stört tal?
 t_biggest = None
 if t1 >= t2 and t1 >= t3:
     t_biggest = t1
@@ -42,11 +42,13 @@ elif t3 >= t1 and t3 >= t2:
 if t_biggest is not None:
     print("Störst tal: " + str(t_biggest))
 
+# Är talen lika?
 if t1 == t2 and t2 == t3:
     print("Alla är lika")
 elif t1 == t2 or t1 == t3 or t2 == t3:
     print("Två tal är lika")
 else:
+    # Vilket är det mellersta talet?
     if t2 < t1 < t3 or t3 < t1 < t2:
         print("tal1 är mellersta talet: " + str(t1))
     elif t1 < t2 < t3 or t3 < t2 < t1:
