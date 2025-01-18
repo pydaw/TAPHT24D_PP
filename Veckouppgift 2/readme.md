@@ -94,5 +94,56 @@ spelar inte så stor roll vilka värden man kör med men kanske kan tänka att m
 0-10.
 
 Har även tänkt att användaren fyllt i negativa värden... så anpassade programmet till det.
+  
+  
+# Uppgift5
 
 
+Testdata:
+Förslag på värden att testa med:  1 2 3, 1 3 2, 3 2 1, -1 -3 -1, 9 9 9, 32 32 16
+
+```log
+Ange tal1: 1
+Ange tal2: 3
+Ange tal3: 2
+Summan av talen är: 6.0
+Störst tal: 3.0
+tal3 är mellersta talet: 2.0
+
+Ange tal1: 3
+Ange tal2: 2
+Ange tal3: 1
+Summan av talen är: 6.0
+Störst tal: 3.0
+tal2 är mellersta talet: 2.0
+
+Ange tal1: -1
+Ange tal2: -3 
+Ange tal3: -1
+Summan av talen är: -5.0
+Störst tal: -1.0
+Två tal är lika
+
+Ange tal1: 9
+Ange tal2: 9
+Ange tal3: 9
+Summan av talen är: 27.0
+Störst tal: 9.0
+Alla är lika
+
+Ange tal1: 32
+Ange tal2: 32
+Ange tal3: 16
+Summan av talen är: 80.0
+Störst tal: 32.0
+Två tal är lika
+```
+
+| t1  | t2  | t3  | Störst | Två lika? | Tre lika? | Mellerst? | PASS / FAIL |
+| --- | --- | --- | ------ | --------- | --------- | --------- | ----------- |
+| 1   | 2   | 3   | 3      | nej       | nej       | 2         | PASS        |
+| 1   | 3   | 2   | 3      | nej       | nej       | 2         | PASS        |
+| 3   | 2   | 1   | 3      | nej       | nej       | 2         | PASS        |
+| -1  | -3  | -1  | -1     | ja        | nej       | -         | PASS        |
+| 9   | 9   | 9   | 9      | -         | ja        | -         | PASS        |
+| 32  | 32  | 16  | 32     | ja        | -         | -         | PASS        |
