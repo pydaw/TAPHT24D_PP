@@ -12,7 +12,7 @@ Ni kan göra den här uppgiften antingen direkt, eller senare i veckan. Om ni g�
 6. Diskutera möjliga förbättringar på koden.
 
 
-![[Pasted image 20250117175434.png]]
+![Pasted image 20250117175434.png](https://github.com/pydaw/TAPHT24D_PP/blob/main/Veckouppgift%202/Pasted%20image%2020250117175434.png)
 
 ## Egna tankar:
 
