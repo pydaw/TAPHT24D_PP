@@ -29,13 +29,6 @@ t3 = float(input("Ange tal3: "))
 sum = t1 + t2 + t3
 print("Summan av talen är: " + str(sum))
 
-# Störst tal
-# if t1 > t2 and t1 > t3:
-#     print("tal1 är störst: " + str(t1))
-# elif t2 > t1 and t2 > t3:
-#     print("tal2 är störst: "+ str(t2))
-# elif t3 > t1 and t3 > t2:
-#     print("tal3 är störst: " + str(t3))
 
 # Stört tal
 t_biggest = None
