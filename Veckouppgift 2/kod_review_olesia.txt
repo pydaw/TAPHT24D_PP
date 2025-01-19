@@ -12,7 +12,9 @@ Bra tänkt kring möjliga negativa värden. Koden är skriven rent och enkelt. L
 Uppgift 4:
 Det är lätt att läsa koden! Jag tänkte bara på vad David sa om variabelnamn och att de inte borde vara för korta.
 Kanske vore det bra att välja andra namn istället för C och F?
+Daniel W: Bra tanke! Får tänkta på det till nästa gång.
 
 Uppgift 5:
 När vi räknar ut det mellersta talet kanske det är möjligt att skriva till användare att
 mellersta tal = tal när alla tre är lika?
+Daniel W: Bra tackar, har ändrat detta nu!
