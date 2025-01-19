@@ -45,6 +45,7 @@ if t_biggest is not None:
 # Är talen lika?
 if t1 == t2 and t2 == t3:
     print("Alla är lika")
+    print("mellerata talet är: " + str(t1))
 elif t1 == t2 or t1 == t3 or t2 == t3:
     print("Två tal är lika")
 else:
