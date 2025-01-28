@@ -37,7 +37,7 @@ elif __version__ == 2:
 
 # Fråga spelare om nytt kort eller vill stanna
 elif __version__ == 3:
-    def check_over_21(sum):
+    def new_card(sum):
         card = random.randint(1, 13)
         sum += card
         print(f"Slumpmässigt kort: {card}")
@@ -62,7 +62,7 @@ elif __version__ == 3:
                 print(f"Dim summa är: {player1_sum}")
                 answer = input("Nytt kort eller stanna? Vill du dra ett nytt kort [Ja/Nej]: ")
                 if answer.casefold() == "ja":
-                    player1_sum = check_over_21(player1_sum)
+                    player1_sum = new_card(player1_sum)
                     break       
                 elif answer.casefold() == "nej":
                     print(f"Spelare 1 har stoppat på summan: {player1_sum}")
@@ -86,7 +86,7 @@ elif __version__ == 3:
                     answer = "nej"
                 
                 if answer.casefold() == "ja":
-                    player2_sum = check_over_21(player2_sum)
+                    player2_sum = new_card(player2_sum)
                     break       
                 elif answer.casefold() == "nej":
                     print(f"Spelare 2 har stoppat på summan: {player2_sum}")
