@@ -68,7 +68,7 @@ def is_number(x):
 print(is_number(5.5))
 print(is_number(42))
 
-print("# Alternativ lösning #")
+print("# Alternativ lösning 1 #")
 def is_number(s):
     try:
         float(s)
@@ -76,6 +76,20 @@ def is_number(s):
     except ValueError:
         return False
 
+print(is_number(5.5))
+print(is_number(42))
+
+print("# Alternativ lösning 2 #")
+def is_number(s):
+    return isinstance(s, int) or isinstance(s, float)
+
+print(is_number(5.5))
+print(is_number(42))
+
+print("# Alternativ lösning 3 #")
+def is_number(s):
+    return isinstance(s,(int, float))
+    
 print(is_number(5.5))
 print(is_number(42))
 
