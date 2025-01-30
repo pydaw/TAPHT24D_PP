@@ -699,7 +699,7 @@ sqare(100)
 t.mainloop()
 ```
   
-Testfall:
+Testfall:  
 ![Pasted image 20250129153735.png](https://github.com/pydaw/TAPHT24D_PP/blob/main/Veckouppgift%204/img/Pasted%20image%2020250129153735.png)
   
 2 Skriv en funktion som flyttar pennan ett lämpligt avstånd till höger, utan att rita. Tanken är att du ska kunna kombinera den med kvadratfunktionen, för att rita flera kvadrater. Exempel:
@@ -733,7 +733,7 @@ for x in range(5):
 t.mainloop()
 ```
   
-Testfall:
+Testfall:  
 ![Pasted image 20250129154743.png](https://github.com/pydaw/TAPHT24D_PP/blob/main/Veckouppgift%204/img/Pasted%20image%2020250129154743.png)
   
   
@@ -774,7 +774,7 @@ circle(100)
 t.mainloop()
 ```
   
-Testfall:
+Testfall:  
 ![Pasted image 20250129161210.png](https://github.com/pydaw/TAPHT24D_PP/blob/main/Veckouppgift%204/img/Pasted%20image%2020250129161210.png)
   
   
@@ -910,12 +910,12 @@ elif __version__ == 2:
     t.mainloop()
 ```
   
-Testfall:
+Testfall:  
    
-Version1:
+Version1:  
 ![Pasted image 20250130102051.png](https://github.com/pydaw/TAPHT24D_PP/blob/main/Veckouppgift%204/img/Pasted%20image%2020250130102051.png)
   
-Version2:
+Version2:  
 ![Pasted image 20250130102026.png](https://github.com/pydaw/TAPHT24D_PP/blob/main/Veckouppgift%204/img/Pasted%20image%2020250130102026.png)
   
   
@@ -975,6 +975,6 @@ draw_sierpinski(sierpinski, points, 5)  # Change the depth as needed
 t.done()
 ```
   
-Testfall:
+Testfall:  
 ![Pasted image 20250130102257.png](https://github.com/pydaw/TAPHT24D_PP/blob/main/Veckouppgift%204/img/Pasted%20image%2020250130102257.png)
   
