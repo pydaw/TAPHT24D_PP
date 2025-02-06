@@ -46,3 +46,15 @@ def test_find_median():
     assert module.find_median("1234") is None
     assert module.find_median(1234) is None
     assert module.find_median(True) is None
+
+
+# 4
+def test_is_is_sorted_ascending():
+    assert module.is_sorted_ascending([1,2,1000]) == True
+    assert module.is_sorted_ascending([1,1000,2]) == False
+    assert module.is_sorted_ascending([1,2,"str"]) == False
+    assert module.is_sorted_ascending([]) == False
+    assert module.is_sorted_ascending(True) == False
+    assert module.is_sorted_ascending(123) == False
+    assert module.is_sorted_ascending("str") == False
+
