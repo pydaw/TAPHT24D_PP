@@ -28,13 +28,29 @@ def autocomplete_list(input, master_list):
 
 if __name__ == "__main__":
     master_list = [
-        "Vad är mpox?",
-        "Vad betyder sigma?",
-        "Vad ska jag rösta i EU-valet?",
-        "Vad är en shaman?",
-        "Vad är mykoplasma?",
+        "Karl Andersson",
+        "Erik Johansson",
+        "Lars Karlsson",
+        "Anders Nilsson",
+        "Per Eriksson",
+        "Mikael Larsson",
+        "Johan Olsson",
+        "Olof Persson",
+        "Nils Svensson",
+        "Jan Gustafsson",
+        "Maria Andersson",
+        "Elisabeth Johansson",
+        "Anna Karlsson",
+        "Kristina Nilsson",
+        "Margareta Eriksson",
+        "Eva Larsson",
+        "Linnéa Olsson",
+        "Karin Persson",
+        "Birgitta Svensson",
+        "Marie Gustafsson",
         1234
     ]
     print(autocomplete_list("mpox", master_list) == [master_list[0]])
     print(autocomplete_list(True, master_list) == [master_list[0]])
     
+
