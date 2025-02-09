@@ -9,8 +9,3 @@ def muliplication_table(n, limit):
     if limit <= 0:
         return None
     return [n*(i+1) for i in range(limit)]
-
-
-if __name__ == "__main__":
-    print(isinstance(True,int))
-    print(muliplication_table(n=True, limit=4))
