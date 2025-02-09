@@ -4,12 +4,13 @@ Skriv sedan in koden i din IDE, exakt som den står, och kör den.
 Fick du samma resultat som du trodde? Om inte, varför?  
   
   
-> [!NOTE]  Ekvivalentklasser inom mjukvarutestning
+> [!NOTE]
+> Ekvivalentklasser inom mjukvarutestning
 >
->Inom **testning** används ekvivalentklasser för att dela in möjliga indata i grupper där varje grupp antas ge samma resultat vid testning. 
->Syftet är att minska antalet testfall utan att förlora testtäckning.
+> Inom **testning** används ekvivalentklasser för att dela in möjliga indata i grupper där varje grupp antas ge samma resultat vid testning. 
+> Syftet är att minska antalet testfall utan att förlora testtäckning.
 >
->- **Exempel:** Om en funktion tar emot en ålder som input och endast accepterar personer mellan 18 och 65 år kan ekvivalentklasserna vara:
+> **Exempel:** Om en funktion tar emot en ålder som input och endast accepterar personer mellan 18 och 65 år kan ekvivalentklasserna vara:
   >  - **Giltiga värden:** 18–65
   >  - **Ogiltiga värden:** <18 och >65
   >  - Istället för att testa varje enskilt tal testar man representativa värden från varje klass (t.ex. 17, 18, 30, 65, 66).
