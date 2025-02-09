@@ -4,7 +4,7 @@ Skriv sedan in koden i din IDE, exakt som den står, och kör den.
 Fick du samma resultat som du trodde? Om inte, varför?
   
   
-> [!INFO]  Ekvivalentklasser inom mjukvarutestning
+> [!NOTE]  Ekvivalentklasser inom mjukvarutestning
 >
 >Inom **testning** används ekvivalentklasser för att dela in möjliga indata i grupper där varje grupp antas ge samma resultat vid testning. 
 >Syftet är att minska antalet testfall utan att förlora testtäckning.
