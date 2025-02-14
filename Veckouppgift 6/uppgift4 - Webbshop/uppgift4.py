@@ -31,6 +31,10 @@ class ShoppingCart():
         return f"Kundvagn: id-{self.__id}"
 
     @property
+    def id(self):
+        return self.__id
+    
+    @property
     def cart(self):
         return self.__cart
 
@@ -38,8 +42,9 @@ class ShoppingCart():
     def cost(self):
         cost = 0
         for cart_pos in self.__cart:
-            item = Product(cart_pos[0])
-            cost += item.price
+            item = cart_pos[0]
+            no_of_items = cart_pos[1]
+            cost += item.price * no_of_items
         return cost
     
     @property
@@ -51,7 +56,7 @@ class ShoppingCart():
         item_exists = False
         item_cart_index = None
         for cart_pos in self.__cart:
-            if cart_pos == item:
+            if cart_pos[0] == item:
                 item_exists = True
                 item_cart_index = self.__cart.index(cart_pos)
                 break
@@ -87,8 +92,8 @@ class Order():
         # Calculate cost of order
         cost = 0
         for order_pos in self.__order:
-            item = Product(order_pos[0])
-            no_of_items = order_pos[2]
+            item = order_pos[0]
+            no_of_items = order_pos[1]
             cost += item.price * no_of_items
         self.__cost = cost
 
@@ -100,10 +105,26 @@ class Order():
         return self.__id
     
     @property
-    def products(self):
-        return self.__products
+    def order(self):
+        return self.__order
     
     @property
     def cost(self):
         return self.__cost
 
+if __name__ == "__main__":
+    shopping_cart = ShoppingCart(2000)
+    srewdriver = Product(1001,"Skruvmejselsats 6 delar", 199)
+    hammer = Product(1002, "Hammare 500g", 149)
+
+    # Lägger till produkt1
+    print(shopping_cart.add_items_to_cart(srewdriver)) # True
+    print(shopping_cart.cart) # [[srewdriver, 1]]
+    
+    # Lägger till produkt2
+    print(shopping_cart.add_items_to_cart(hammer, 6)) # True
+    print(shopping_cart.cart) # [[srewdriver, 1], [hammer, 6]]
+    
+    # Ändring av antal produkt1
+    print(shopping_cart.add_items_to_cart(srewdriver, 5)) # True
+    print(shopping_cart.cart) # [[srewdriver, 5], [hammer, 6]]
