@@ -497,7 +497,6 @@ Köpprocess:
   
 Lösning:
 ```python
-
 class Product():
     def __init__(self, id:int, name:str, price:float):
         self.__id = id
@@ -570,7 +569,11 @@ class ShoppingCart():
             return False
         
     def clear_cart(self):
-        self.__cart.clear()
+        if not self.__order_has_been_placed:
+            self.__cart.clear()
+            return True
+        else:
+            return False
     
     def order_items_in_cart(self):
         if not self.__order_has_been_placed:
@@ -689,7 +692,7 @@ def test_ShoppingCart_class__clear_cart():
     assert shopping_cart.cart == [[srewdriver, 5], [hammer, 6]]
     
     # Check if cart is empty
-    shopping_cart.clear_cart()
+    assert shopping_cart.clear_cart() == True
     assert shopping_cart.cart == []
 
 def test_ShoppingCart_class__order_items_in_cart():
@@ -713,6 +716,10 @@ def test_ShoppingCart_class__order_items_in_cart():
 
     # Add item in chart after order
     assert shopping_cart.add_items_to_cart(srewdriver, 6) == False
+
+    # Clear shopping cart after order
+    assert shopping_cart.clear_cart() == False
+
     
 
 # === Test Order ===
@@ -730,6 +737,7 @@ def test_Order_class__init_property():
     assert order.order == [[srewdriver, 5],[hammer, 6]]
     assert order.cost == 1889
     
+
 
 ```
   

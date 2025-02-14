@@ -71,7 +71,11 @@ class ShoppingCart():
             return False
         
     def clear_cart(self):
-        self.__cart.clear()
+        if not self.__order_has_been_placed:
+            self.__cart.clear()
+            return True
+        else:
+            return False
     
     def order_items_in_cart(self):
         if not self.__order_has_been_placed:
