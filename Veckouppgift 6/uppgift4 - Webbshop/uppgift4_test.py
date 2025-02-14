@@ -79,9 +79,11 @@ def test_ShoppingCart_class__order_items_in_cart():
 
     # Add item in chart after order
     assert shopping_cart.add_items_to_cart(srewdriver, 6) == False
-
+    assert shopping_cart.cart == [[srewdriver, 5], [hammer, 6]]
+    
     # Clear shopping cart after order
     assert shopping_cart.clear_cart() == False
+    assert shopping_cart.cart == [[srewdriver, 5], [hammer, 6]]
 
     
 
